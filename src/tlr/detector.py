@@ -1,9 +1,9 @@
 import torch.nn as nn
 import torch.nn.functional as F
-from rpn_proposal import RPNProposalSSD
-from dfmb_roi_align import DFMBPSROIAlign
-from faster_rcnn import RCNNProposal
-from feature_net import FeatureNet
+from tlr.rpn_proposal import RPNProposalSSD
+from tlr.dfmb_roi_align import DFMBPSROIAlign
+from tlr.faster_rcnn import RCNNProposal
+from tlr.feature_net import FeatureNet
 
 class TLDetector(nn.Module):
     """

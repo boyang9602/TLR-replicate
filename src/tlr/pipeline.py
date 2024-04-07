@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
-from detector import TLDetector
-from recognizer import Recognizer
-from hungarian_optimizer import HungarianOptimizer
-from tools.utils import preprocess4det, preprocess4rec, restore_boxes_to_full_image, nms, boxes2projections
-from selector import select_tls
+from tlr.detector import TLDetector
+from tlr.recognizer import Recognizer
+from tlr.hungarian_optimizer import HungarianOptimizer
+from tlr.tools.utils import preprocess4det, preprocess4rec, restore_boxes_to_full_image, nms, boxes2projections
+from tlr.selector import select_tls
 import json
 import os
 
@@ -66,8 +66,8 @@ class Pipeline(nn.Module):
         return valid_detections, recognitions, assignments, invalid_detections
 
 def load_pipeline(device=None):
-    DIR = os.path.dirname(os.path.abspath(__file__))
-    print(f'Loaded the TL pipeline. Device is {device}')
+    DIR = os.path.dirname(__file__)
+    print(f'Loaded the TL pipeline. Device is {device}. {DIR}')
     means_det = torch.Tensor([102.9801, 115.9465, 122.7717]).to(device)
     means_rec = torch.Tensor([69.06, 66.58, 66.56]).to(device)
 

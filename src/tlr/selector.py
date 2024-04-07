@@ -1,6 +1,6 @@
 import math
 import torch
-from tools.utils import crop
+from tlr.tools.utils import crop
 
 def calc_2d_gaussian_score(p1, p2, sigma1, sigma2):
     return math.exp(-0.5 * ((p1[0] - p2[0]) * (p1[0] - p2[0]) / (sigma1 * sigma1) + (p1[1] - p2[1]) * (p1[1] - p2[1]) / (sigma2 * sigma2)))

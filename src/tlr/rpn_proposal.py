@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from tools.utils import nms
+from tlr.tools.utils import nms
 # detection
 class RPNProposalSSD(nn.Module):
     def __init__(self, bbox_reg_param, detection_output_ssd_param, device=None):
