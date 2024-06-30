@@ -67,7 +67,7 @@ class Pipeline(nn.Module):
 
 def load_pipeline(device=None):
     DIR = os.path.dirname(__file__)
-    print(f'Loaded the TL pipeline. Device is {device}. {DIR}')
+    print(f'Loaded the TL pipeline. Device is {device}.')
     means_det = torch.Tensor([102.9801, 115.9465, 122.7717]).to(device)
     means_rec = torch.Tensor([69.06, 66.58, 66.56]).to(device)
 
