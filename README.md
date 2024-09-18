@@ -23,10 +23,15 @@ Please refer to https://github.com/ApolloAuto/apollo/blob/v7.0.0/docs/specs/traf
 
 This project is part of `SITAR: Evaluating the Adversarial Robustness of Traffic Light Recognition in Level-4 Autonomous Driving`. Please consider to cite it if you found it useful. 
 ```
-@inproceedings{sitar,
-author={Yang, Bo and Yang, Jinqiu},
-title={SITAR: Evaluating the Adversarial Robustness of Traffic Light Recognition in Level-4 Autonomous Driving},
-year={2024},
-booktitle={35th IEEE Intelligent Vehicles Symposium}
-}
+@INPROCEEDINGS{sitar,
+  author={Yang, Bo and Yang, Jinqiu},
+  booktitle={2024 IEEE Intelligent Vehicles Symposium (IV)}, 
+  title={SITAR: Evaluating the Adversarial Robustness of Traffic Light Recognition in Level-4 Autonomous Driving}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1068-1075},
+  keywords={Target tracking;Image recognition;Perturbation methods;Geology;Web and internet services;Object detection;Robustness},
+  doi={10.1109/IV55156.2024.10588456}}
+
 ```
